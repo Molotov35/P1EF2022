@@ -2,9 +2,6 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
-///Edwin Adony Montejo Martínez 9491-21-3898
-//#include "menuSistema.h"
-
 char hora()
 {
 /* fecha/hora actual basado en el sistema actual */
