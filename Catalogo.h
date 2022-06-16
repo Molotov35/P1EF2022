@@ -1,8 +1,8 @@
-/*#include "persona.h"
+#include "persona.h"
 #include "pacientes.h"
-*/
 
-int reporte(){
+
+int catalogo(){
     int choice;
 	char x;
 	do
@@ -14,15 +14,9 @@ int reporte(){
 	printf("\t\t    Edwin Adony Montejo Martínez 9491-21-3898\n");
 	printf("     ======================================================================\n");
 
-<<<<<<< HEAD
-	cout<<"\t\t\t\t1. EMPLEADOS ACTIVOS"<<endl;
-	cout<<"\t\t\t\t2. PACIENTES INGRESADOS"<<endl;
-	cout<<"\t\t\t\t4. EXAMENES REALIZADOS"<<endl;
-=======
 	cout<<"\t\t\t\t1. EMPLEADOS"<<endl;
 	cout<<"\t\t\t\t2. PACIENTES"<<endl;
 	cout<<"\t\t\t\t4. EXAMENES"<<endl;
->>>>>>> 08e8bf2a40a47b620e8c6548e10899f986ac8b71
 	cout<<"\t\t\t\t0. EXIT"<<endl;
 	cout<<"Ingresa tu Opcion: ";
 	cin>>choice;
@@ -31,13 +25,13 @@ int reporte(){
     case 1:
         {
             persona empleado;
-            empleado.display();
+            empleado.menu();
             break;
         }
 	case 2:
 		{
             paciente nuevo;
-            nuevo.display();
+            nuevo.menu();
             break;
         }
     case 0:
