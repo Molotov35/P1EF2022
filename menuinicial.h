@@ -19,9 +19,9 @@ void MenuInicial() {
 		system("cls");
 		gotoxy (50,3); printf("MENU INICIAL");
 		gotoxy (50,4); printf("============");
-		gotoxy (40,5); printf("[1]. Ver usuarios registrados");
+		gotoxy (40,5); printf("[1]. Ingresar al sistema");
 		gotoxy (40,6); printf("[2]. Registrar usuario nuevo");
-		gotoxy (40,7); printf("[3]. Ingresar al sistema");
+		gotoxy (40,7); printf("[3]. Ver usuarios registrados");
 		gotoxy (40,8); printf("[0]. Salir");
 		gotoxy (45,9); printf("Ingrese su opcion: [ ]\b\b");
 		leerLinea(linea, 80);
@@ -29,7 +29,7 @@ void MenuInicial() {
 
 		switch (opcion) {
 			case 1:
-				menuListarUsuarios();
+				menuIniciarSesion();
 				break;
 
 			case 2:
@@ -37,7 +37,7 @@ void MenuInicial() {
 				break;
 
 			case 3:
-				menuIniciarSesion();
+			    menuListarUsuarios();
 				break;
 
 			case 0:

@@ -4,6 +4,7 @@
 
 #define MAX 80
 
+
 void menuRegistrarUsuario() {
     char linea[MAX];
 	Usuario usuario;
@@ -29,7 +30,7 @@ void menuRegistrarUsuario() {
 			/* Se inserta el usuario en el archivo de usuarios */
 			if (insertarUsuario(usuario)) {
 				gotoxy(40,7); printf("El usuario fue registrado satisfactoriamente!");
-//				hora();
+				hora();
 				string filename("bitacora.dat");
                 ofstream file_out;
 			    file_out.open("bitacora.dat", std::ios_base::app);

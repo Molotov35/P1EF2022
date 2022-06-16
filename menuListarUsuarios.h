@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "obtenerUsuarios.h"
+
 void menuListarUsuarios() {
 
 	int numeroUsuarios = 0;

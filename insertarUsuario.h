@@ -1,5 +1,6 @@
 
 
+
 char insertarUsuario(Usuario usuario) {
 	FILE *archivo;
 	char insercion = 0;
