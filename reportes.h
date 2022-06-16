@@ -1,8 +1,8 @@
-#include "persona.h"
+/*#include "persona.h"
 #include "pacientes.h"
+*/
 
-
-int catalogo(){
+int reporte(){
     int choice;
 	char x;
 	do
@@ -16,7 +16,8 @@ int catalogo(){
 
 	cout<<"\t\t\t\t1. EMPLEADOS"<<endl;
 	cout<<"\t\t\t\t2. PACIENTES"<<endl;
-	cout<<"\t\t\t\t3. EXIT"<<endl;
+	cout<<"\t\t\t\t4. EXAMENES"<<endl;
+	cout<<"\t\t\t\t0. EXIT"<<endl;
 	cout<<"Ingresa tu Opcion: ";
 	cin>>choice;
 	switch(choice)
@@ -24,20 +25,19 @@ int catalogo(){
     case 1:
         {
             persona empleado;
-            empleado.menu();
+            empleado.display();
             break;
         }
 	case 2:
 		{
             paciente nuevo;
-            nuevo.menu();
+            nuevo.display();
             break;
         }
-    case 3:
+    case 0:
         return 0;
     default:
         cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
     }
-	getch();
     }while(choice!= 0);
 }
